@@ -11,10 +11,15 @@ Clone this repo:
 git clone <this-repo>
 ```
 
-Assuming your project is located under the same parent folder as the cloned aidlc-workflow 
-repo, change directory to your project's workspace:
+Create a new project folder with a name of your choosing if you're working on a greenfield application:
+```
+mkdir <my-project>
+```
+
+Assuming your project is located under the same parent folder as the cloned `aidlc-workflows`
+repo, change directory to your project folder:
 ```bash
-cd my-project
+cd <my-project>
 ```
 
 ### Amazon Q Developer IDE Plugin/Extension
@@ -23,7 +28,9 @@ AI-DLC uses [Amazon Q Rules](https://docs.aws.amazon.com/amazonq/latest/qdevelop
 
 Copy the AI-DLC workflow to your project's workspace under the `<project-root>/.amazonq` folder:
 ```
-mkdir -p .amazonq/rules && cp -R ../aidlc-workflows/aidlc-rules/aws-aidlc-rules .amazonq/rules/ && cp -R ../aidlc-workflows/aidlc-rules/aws-aidlc-rule-details .amazonq/
+mkdir -p .amazonq/rules 
+cp -R ../aidlc-workflows/aidlc-rules/aws-aidlc-rules .amazonq/rules/ 
+cp -R ../aidlc-workflows/aidlc-rules/aws-aidlc-rule-details .amazonq/
 ```
 
 To confirm that the Amazon Q Rules are correctly loaded in your IDE, follow these steps:
@@ -42,7 +49,9 @@ AI-DLC uses [Kiro Steering Files](https://kiro.dev/docs/cli/steering/) within yo
 Copy the AI-DLC workflow to your project's workspace under the `<project-root>/.kiro` folder:
 
 ```bash
-mkdir -p .kiro/steering && cp -R ../aidlc-workflows/aidlc-rules/aws-aidlc-rules .kiro/steering/ && cp -R ../aidlc-workflows/aidlc-rules/aws-aidlc-rule-details .kiro/
+mkdir -p .kiro/steering
+cp -R ../aidlc-workflows/aidlc-rules/aws-aidlc-rules .kiro/steering/
+cp -R ../aidlc-workflows/aidlc-rules/aws-aidlc-rule-details .kiro/
 ```
 
 To confirm that the AI-DLC rules are correctly loaded in your Kiro CLI, follow these steps:
