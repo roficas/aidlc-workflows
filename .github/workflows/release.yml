@@ -49,7 +49,7 @@ jobs:
       - name: Create GitHub Release
         uses: softprops/action-gh-release@a06a81a03ee405af7f2048a818ed3f03bbf83c7b # v2.5.0
         with:
-          name: "AI-DLC Methodology v${{ steps.version.outputs.version }}"
+          name: "AI-DLC Workflow v${{ steps.version.outputs.version }}"
           body: |
             Release v${{ steps.version.outputs.version }}
             
